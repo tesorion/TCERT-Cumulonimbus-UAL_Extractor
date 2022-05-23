@@ -1,0 +1,40 @@
+{
+	"order":0,
+	"template":"microsoft365-ual*",
+	"settings":{
+		"index.number_of_shards":2,
+		"index.refresh_interval":"60s"
+	},
+	"mappings": {
+		"properties": {
+			"@timestamp": {
+				"type": "date"
+			},
+			"StartTime": {
+				"type": "date"
+			},
+			"ClientIP": {
+				"type": "ip"
+			},
+			"SenderIp": {
+				"type": "ip"
+			},
+			"geoip": {
+				"properties": {
+					"ip": {
+						"type": "ip"
+					},
+					"latitude": {
+						"type": "float"
+					},
+					"location": {
+						"type":"geo_point"
+					},
+					"longitude": {
+						"type": "float"
+					}
+				}
+			}
+		}
+	}
+}
