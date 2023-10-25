@@ -15,8 +15,8 @@ param
 [string[]]$UserIds = "*"
 )
 
-. "$PSScriptRoot\..\Functions\Get-Timestamp.ps1"
-. "$PSScriptRoot\..\Functions\Write-log.ps1"
+. "$PSScriptRoot\Functions\Get-Timestamp.ps1"
+. "$PSScriptRoot\Functions\Write-log.ps1"
 
 $logo = @'
 
